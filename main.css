@@ -4,11 +4,13 @@ body{
 }
 
 #mainContainer{
-    position: inherit;
-    margin-top: -5%;
+    position: relative;
+    margin-top: 2%;
     margin-left: 15%;
     margin-right: 15%;
-    height: 100vh;
+    padding-bottom: 10%;
+    padding-top: 0.1%;
+    
     background-color: whitesmoke;
     opacity: 1;
     box-shadow: 0px 0px 100px black;
@@ -48,12 +50,13 @@ body{
 #imgText{
     display: block;
     background-color: white;
-    width: 50%; 
+    width: 45%; 
     opacity: 0;
     padding-top: 5%;
+    padding-bottom: 1%;
     padding-left: 2%;
     padding-right: 2%;
-    margin-top: -10vh;
+    margin-top: -30vh;
     margin-left: auto;
     margin-right: auto;
     z-index: -1;
@@ -65,14 +68,18 @@ body{
 }
 
 #chokladbollar:hover + #imgText{  
-    -webkit-transform: translate(0px,7em);
-     -moz-transform: translate(0px,7em);
-       -o-transform: translate(0px,7em);
-      -ms-transform: translate(0px,7em);
-          transform: translate(0px,7em);
+    -webkit-transform: translate(0px,9em);
+     -moz-transform: translate(0px,9em);
+       -o-transform: translate(0px,9em);
+      -ms-transform: translate(0px,9em);
+          transform: translate(0px,9em);
      box-shadow: 0px 0px 50px black;
     opacity: 1;
     
+}
+
+#imgTitle{
+    text-align: center;
 }
 
 #footer{ 
