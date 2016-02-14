@@ -4,15 +4,74 @@ body{
 }
 
 #mainContainer{
-    margin-bottom: 0%;
-    margin-top: 1%;
+    position: inherit;
+    margin-top: -5%;
     margin-left: 15%;
     margin-right: 15%;
     height: 100vh;
     background-color: whitesmoke;
-    opacity: 0.4;
+    opacity: 1;
     box-shadow: 0px 0px 100px black;
     border: none;
+    z-index: 1;
+    
+}
+
+#chokladbollar{
+    position: relative;
+    display: block;
+    content: url(IMG/chokladbollar.jpg);
+    opacity: 1;
+    top: 10%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border:0.3rem solid black;
+    box-shadow: 0px 0px 50px black;
+    z-index: 5;
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+#chokladbollar:hover { 
+    -webkit-filter: grayscale(100%);
+    -webkit-transform: rotate(-5deg);
+     -moz-transform: rotate(-5deg);
+       -o-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+#imgText{
+    display: block;
+    background-color: white;
+    width: 50%; 
+    opacity: 0;
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: -10vh;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+     -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+#chokladbollar:hover + #imgText{  
+    -webkit-transform: translate(0px,7em);
+     -moz-transform: translate(0px,7em);
+       -o-transform: translate(0px,7em);
+      -ms-transform: translate(0px,7em);
+          transform: translate(0px,7em);
+     box-shadow: 0px 0px 50px black;
+    opacity: 1;
     
 }
 
@@ -23,4 +82,5 @@ body{
     color: white;
     border: none;
     text-align: center;
+    z-index: 10;
 }
