@@ -19,13 +19,10 @@ body{
 }
 
 .object{
-   // background-color: blueviolet;
     width: 50%;
     margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
-   // border:0.3rem solid black;
-
 }
 
 #imgBigTitle{
@@ -41,7 +38,6 @@ body{
 #chokladbollar{
     position: relative;
     display: block;
-    content: url(IMG/chokladbollar.jpg);
     opacity: 1;
     top: 0%;
     margin-top: -5%;
@@ -113,4 +109,34 @@ body{
     border: none;
     text-align: center;
     z-index: 11;
+}
+
+#recipe{
+    position: relative;
+    display: block;
+   // float: left;
+    background-color: yellow;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+#recipeImg{
+    position: relative;
+    display: block;
+    float: left;
+    border:0.3rem solid black;
+    width: 40%;
+    margin-bottom: auto;
+}
+
+#aboutIt{
+    position: relative;
+    display: block;
+    background-color: blue;
+    float: left;
+    width: 40%;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-bottom: auto;
 }
