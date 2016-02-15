@@ -4,7 +4,6 @@ body{
 }
 
 li{
-    background-color: aqua;
 }
 
 #mainContainer{
@@ -13,7 +12,6 @@ li{
     margin-top: 2%;
     margin-left: 15%;
     margin-right: 15%;
-    padding-bottom: 15%;
     padding-top: 0.1%;
     background-color: white;
     opacity: 1;
@@ -117,25 +115,15 @@ li{
 }
 
 #recipe{
-    position: relative;
-    display: block;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
-    margin-bottom: 20%;
 }
 
-#recipeImgFrame{
-    position: relative;
-    display: block;
-    margin-bottom: 2%;
-}
-
-#recipeImg{
-    position: relative;
-    display: block;
+#mainContainer #recipeImg{
     border:0.3rem solid black;
     width: 40%;
+    margin-bottom: 1%;
     box-shadow: 0px 0px 40px 0px black;
     -webkit-transform: rotate(-5deg);
      -moz-transform: rotate(-5deg);
@@ -144,12 +132,20 @@ li{
           transform: rotate(-5deg);
 }
 
-#aboutIt{
-    position: relative;
-    display: block;
+#mainContainer #aboutIt{
+    float: right;
     width: 40%;
     min-width: 15rem;
+    max-height: 10rem;
     margin-top: -35%;
     margin-left: 60%;
     margin-bottom: 2%;
+}
+
+#mainContainer #ingrediets{
+}
+
+#mainContainer #howTo{
+    margin-top: 3%;
+    padding-bottom: 3%;
 }
