@@ -105,7 +105,8 @@ li{
 
 #footer{ 
     margin-left: 15%;
-    margin-right: 15%;
+    margin-right: 15%;        
+    min-width: 38rem;
     box-shadow: 0px 0px 100px black;
     color: black;
     background-color: aqua;
@@ -148,4 +149,168 @@ li{
 #mainContainer #howTo{
     margin-top: 3%;
     padding-bottom: 3%;
+}
+
+/*====================================== MOBIL SKÄRM ===================================*/
+@media screen and (max-width:400px) {
+  
+    @-ms-viewport {
+        width: device-width
+    }
+
+    @-o-viewport {
+        width: device-width;
+    }
+    @viewport {
+        width: device-width;
+    }
+    
+    body{
+    }
+
+    li{
+    }
+    
+    #mainContainer{
+    position: relative;
+    margin-top: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top: 0%;
+    background-color: black;
+    opacity: 1;
+    border: none;
+    z-index: 1;
+    }
+    
+    .object{
+        width: 50%;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #imgBigTitle{
+        text-align: center;
+        background-color: black;
+        border:0.3rem solid black;
+        margin-top: -1%;
+        color: white;
+        width: 100%;
+        top: 0rem;
+        z-index: 10;
+    }
+    
+    #chokladbollar{
+        position: relative;
+        display: block;
+        opacity: 1;
+        top: 0%;
+        margin-top: -5%;
+        width: 100%;
+        border:0.3rem solid black;
+        box-shadow: 0px 0px 50px black;
+        z-index: 5;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    #chokladbollar:hover { 
+        -webkit-filter: grayscale(100%);
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+
+    #imgText:link, :visited, :hover, :active  {
+        color:#000;
+        text-decoration: none;
+    }
+
+    #imgText{
+        display: block;
+        background-color: white;
+        width: 100%; 
+        opacity: 0;
+        padding-top: 10%;
+        padding-bottom: 0%;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: -10.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        border:0.1rem solid black;
+        z-index: -1;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+    }
+
+    #chokladbollar:hover + #imgText{  
+        -webkit-transform: translate(0px,9em);
+        -moz-transform: translate(0px,9em);
+        -o-transform: translate(0px,9em);
+        -ms-transform: translate(0px,9em);
+        transform: translate(0px,9em);
+        box-shadow: 0px 0px 50px black;
+        opacity: 1;
+    }
+
+    #imgTitle{
+        text-align: center;
+    }
+    
+    #footer{ 
+        margin-left: 15%;
+        margin-right: 15%;        
+        min-width: 38rem;
+        box-shadow: 0px 0px 100px black;
+        color: black;
+        background-color: aqua;
+        border: none;
+        text-align: center;
+        z-index: 11;
+    }
+
+    #recipe{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+    }
+    
+    #mainContainer #recipeImg{
+        border:0.3rem solid black;
+        width: 40%;
+        margin-bottom: 1%;
+        box-shadow: 0px 0px 40px 0px black;
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+
+    #mainContainer #aboutIt{
+        float: right;
+        width: 40%;
+        min-width: 15rem;
+        max-height: 10rem;
+        margin-top: -35%;
+        margin-left: 60%;
+        margin-bottom: 2%
+    }
+    #mainContainer #ingrediets
+    }
+    #mainContainer #howTo{
+        margin-top: 3%;
+        padding-bottom: 3%;
+    }
+    
 }
