@@ -114,29 +114,34 @@ body{
 #recipe{
     position: relative;
     display: block;
-   // float: left;
-    background-color: yellow;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
+    margin-bottom: 20%;
+}
+
+#recipeImgFrame{
+    position: relative;
+    display: block;
+    margin-bottom: 2%;
 }
 
 #recipeImg{
-    position: relative;
-    display: block;
-    float: left;
     border:0.3rem solid black;
     width: 40%;
-    margin-bottom: auto;
+    box-shadow: 0px 0px 40px 0px black;
+    -webkit-transform: rotate(-5deg);
+     -moz-transform: rotate(-5deg);
+       -o-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
 }
 
 #aboutIt{
     position: relative;
     display: block;
-    background-color: blue;
-    float: left;
     width: 40%;
-    margin-top: 0%;
-    margin-right: 0%;
-    margin-bottom: auto;
+    margin-top: -35%;
+    margin-left: 60%;
+    margin-bottom: 2%;
 }
