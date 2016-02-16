@@ -115,13 +115,13 @@ li{
     z-index: 11;
 }
 
-#recipe{
+#mainContainer #recipe{
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
 }
 
-#mainContainer #recipeImg{
+#recipe #recipeImg{
     border:0.3rem solid black;
     width: 40%;
     margin-bottom: 1%;
@@ -133,7 +133,7 @@ li{
           transform: rotate(-5deg);
 }
 
-#mainContainer #aboutIt{
+#recipe #aboutIt{
     float: right;
     width: 40%;
     min-width: 15rem;
@@ -143,10 +143,10 @@ li{
     margin-bottom: 2%;
 }
 
-#mainContainer #ingrediets{
+#recipe #ingrediets{
 }
 
-#mainContainer #howTo{
+#recipe #howTo{
     margin-top: 3%;
     padding-bottom: 3%;
 }
@@ -172,15 +172,19 @@ li{
     }
     
     #mainContainer{
-    position: relative;
-    margin-top: 2%;
-    margin-left: 0%;
-    margin-right: 0%;
-    padding-top: 0%;
-    background-color: black;
-    opacity: 1;
-    border: none;
-    z-index: 1;
+        position: relative;
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-top: 0%;
+        min-width: 0px;
+        width: 100%;
+        background-color: aqua;
+        opacity: 1;
+        border: none;
+        min-width: 0px;;
+        box-shadow: 0px 0px 0px 0px black;
+        z-index: 1;
     }
     
     .object{
@@ -268,49 +272,65 @@ li{
     }
     
     #footer{ 
-        margin-left: 15%;
-        margin-right: 15%;        
-        min-width: 38rem;
-        box-shadow: 0px 0px 100px black;
-        color: black;
-        background-color: aqua;
+        margin-left: 0%;
+        margin-right: 0%;        
+        min-width: 0rem;
+        box-shadow: 0px 0px 0px black;
+        color: white;
+        background-color: black;
         border: none;
         text-align: center;
         z-index: 11;
     }
 
-    #recipe{
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 2%;
+    #mainContainer #recipe{
+        background-color: red;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 0%;
     }
-    
-    #mainContainer #recipeImg{
-        border:0.3rem solid black;
-        width: 40%;
-        margin-bottom: 1%;
+    #recipe #border{
+        background-color: black;
+        padding: 1% 1% 1% 1%; 
+    }
+    #border #recipeImg{
+        border:0rem solid black;
+        width: 100%;
+        margin-bottom: 0%;
         box-shadow: 0px 0px 40px 0px black;
-        -webkit-transform: rotate(-5deg);
-        -moz-transform: rotate(-5deg);
-        -o-transform: rotate(-5deg);
-        -ms-transform: rotate(-5deg);
-        transform: rotate(-5deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 
-    #mainContainer #aboutIt{
-        float: right;
-        width: 40%;
-        min-width: 15rem;
-        max-height: 10rem;
-        margin-top: -35%;
-        margin-left: 60%;
-        margin-bottom: 2%
+    #recipe #aboutIt{
+        float: none;
+        position: relative;
+        background-color: aqua;
+        width: 100%;
+        min-width: 0px;
+        max-height: 11.5rem;
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-bottom: %; /*65%*/
     }
-    #mainContainer #ingrediets
-    }
-    #mainContainer #howTo{
+    
+    #recipe #ingrediets{
+        background-color: yellow;
         margin-top: 3%;
         padding-bottom: 3%;
+    }
+    
+    #recipe #howTo{
+        background-color: blue;
+        margin-top: 3%;
+        padding-bottom: 3%;
+    }
+    #hLine{
+        display: none;
     }
     
 }
