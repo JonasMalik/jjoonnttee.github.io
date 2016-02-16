@@ -169,6 +169,7 @@ li{
     }
 
     li{
+        margin-top: 2%;
     }
     
     #mainContainer{
@@ -284,7 +285,7 @@ li{
     }
 
     #mainContainer #recipe{
-        background-color: red;
+        background-color: white;
         width: 100%;
         margin-left: 0%;
         margin-right: 0%;
@@ -309,23 +310,20 @@ li{
     #recipe #aboutIt{
         float: none;
         position: relative;
-        background-color: aqua;
         width: 100%;
         min-width: 0px;
-        max-height: 11.5rem;
+        max-height: 100%;;
         margin-top: 0%;
         margin-left: 0%;
-        margin-bottom: %; /*65%*/
+        padding-bottom: 3%;
     }
     
     #recipe #ingrediets{
-        background-color: yellow;
         margin-top: 3%;
         padding-bottom: 3%;
     }
     
     #recipe #howTo{
-        background-color: blue;
         margin-top: 3%;
         padding-bottom: 3%;
     }
