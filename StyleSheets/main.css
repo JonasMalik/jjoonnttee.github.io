@@ -1,5 +1,5 @@
 body{
-    background-image: url("IMG/footer_lodyas.png");
+    background-image: url("../Images/footer_lodyas.png");
     background-repeat: repeat;
 }
 
@@ -152,7 +152,7 @@ li{
 }
 
 /*====================================== MOBIL SKÄRM ===================================*/
-@media screen and (max-width:700px) {
+@media screen and (max-width:500px) {
   
     @-ms-viewport {
         width: device-width
