@@ -1,17 +1,20 @@
+var buttonId = ["one", "two", "three", "four", "five"];
+
+
 function $(id) {
     return document.getElementById(id);
 }
 
 function changePortions() {
-    if ($("one").checked === true) {
-        $("demo").innerHTML = $("one").value * (100 / 30).toFixed(2);
-    } else if ($("two").checked === true) {
-        $("demo").innerHTML = $("two").value;
-    } else if ($("three").checked === true) {
-        $("demo").innerHTML = $("three").value;
-    } else if ($("four").checked === true) {
-        $("demo").innerHTML = $("four").value;
-    } else if ($("five").checked === true) {
-        $("demo").innerHTML = $("five").value;
-    }
+    for (var i = 0; i < 5; i++){
+         if ($(buttonId[i]).checked === true) {
+             $("butter").innerHTML = Math.round((100 / 30) * $(buttonId[i]).value) + " g smör";
+             $("sugar").innerHTML = ((1 / 30) * $(buttonId[i]).value).toFixed(2) + " dl socker";
+             $("vanillaSugar").innerHTML = ((1 / 30) * $(buttonId[i]).value).toFixed(2) + " msk vanilj socker";
+             $("cocoa").innerHTML = (3 / 30) * $(buttonId[i]).value + " msk kakao";
+             $("rolledOats").innerHTML = (3 / 30) * $(buttonId[i]).value + " dl havregryn";
+             $("coffee").innerHTML = (3 / 30) * $(buttonId[i]).value + " msk kallt starkt kaffe";
+             break;
+         }
+    }    
 }
