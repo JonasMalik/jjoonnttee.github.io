@@ -8,7 +8,6 @@ li{
 
 #mainContainer{
     position: relative;
-    min-width: 38rem;
     margin-top: 2%;
     margin-left: 15%;
     margin-right: 15%;
@@ -22,10 +21,13 @@ li{
 }
 
 .object{
+    position: relative;
     width: 50%;
     margin-top: 2%;
+    height: 37rem;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 #imgBigTitle{
@@ -63,7 +65,7 @@ li{
           transform: rotate(-5deg);
 }
 
- #imgText:link, :visited, :hover, :active  {
+ a:link, :visited, :hover, :active  {
      color:#000;
      text-decoration: none;
 }
@@ -106,10 +108,9 @@ li{
 #footer{ 
     margin-left: 15%;
     margin-right: 15%;        
-    min-width: 38rem;
     box-shadow: 0px 0px 100px black;
-    color: black;
-    background-color: aqua;
+    color: white;
+    background-color: black;
     border: none;
     text-align: center;
     z-index: 11;
@@ -180,7 +181,7 @@ li{
         padding-top: 0%;
         min-width: 0px;
         width: 100%;
-        background-color: aqua;
+        background-color: white;
         opacity: 1;
         border: none;
         min-width: 0px;;
@@ -189,7 +190,8 @@ li{
     }
     
     .object{
-        width: 50%;
+        width: 100%;
+        height: auto;
         margin-top: 2%;
         margin-left: auto;
         margin-right: auto;
@@ -213,7 +215,7 @@ li{
         top: 0%;
         margin-top: -5%;
         width: 100%;
-        border:0.3rem solid black;
+        border:0rem solid black;
         box-shadow: 0px 0px 50px black;
         z-index: 5;
         -webkit-transition: all 0.5s ease;
@@ -225,11 +227,11 @@ li{
 
     #chokladbollar:hover { 
         -webkit-filter: grayscale(100%);
-        -webkit-transform: rotate(-5deg);
-        -moz-transform: rotate(-5deg);
-        -o-transform: rotate(-5deg);
-        -ms-transform: rotate(-5deg);
-        transform: rotate(-5deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 
     #imgText:link, :visited, :hover, :active  {
@@ -240,30 +242,30 @@ li{
     #imgText{
         display: block;
         background-color: white;
-        width: 100%; 
-        opacity: 0;
-        padding-top: 10%;
-        padding-bottom: 0%;
-        padding-left: 2%;
-        padding-right: 2%;
-        margin-top: -10.5rem;
-        margin-left: auto;
-        margin-right: auto;
-        border:0.1rem solid black;
+        width: 98%; 
+        opacity: 1;
+        padding-top: 5%;
+        padding-bottom: 2%;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-top: 0rem;
+        margin-left: 1%;
+        margin-right: 1%;
+        border:0rem solid black;
         z-index: -1;
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        transition: all 1s ease;
+        -webkit-transition: all 0s ease;
+        -moz-transition: all 0s ease;
+        -o-transition: all 0s ease;
+        -ms-transition: all 0s ease;
+        transition: all 0s ease;
     }
 
     #chokladbollar:hover + #imgText{  
-        -webkit-transform: translate(0px,9em);
-        -moz-transform: translate(0px,9em);
-        -o-transform: translate(0px,9em);
-        -ms-transform: translate(0px,9em);
-        transform: translate(0px,9em);
+        -webkit-transform: translate(0px,0em);
+        -moz-transform: translate(0px,0em);
+        -o-transform: translate(0px,0em);
+        -ms-transform: translate(0px,0em);
+        transform: translate(0px,0em);
         box-shadow: 0px 0px 50px black;
         opacity: 1;
     }

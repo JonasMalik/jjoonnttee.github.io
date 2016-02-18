@@ -21,15 +21,23 @@
                     Detta är ett recept från Buffé nr 9, 2001.
                 </p>
             </div>
+            <form action="" onclick="changePortions()">
+                <input id="one" type="radio" name="portions" value="10"> 10 portioner
+                <input id="two" type="radio" name="portions" value="20"> 20 portioner
+                <input id="three" type="radio" name="portions" value="30"> 30 portioner
+                <input id="four" type="radio" name="portions" value="40"> 40 portioner
+                <input id="five" type="radio" name="portions" value="50"> 50 portioner
+            </form>
+            <p id="demo">True/False</p>
             <div id="ingrediets">
                 <h3>Ingedienser</h3>
                 <ul>
-                    <li>100 g smör</li>
-                    <li>1 dl socker</li>
-                    <li>1 msk vaniljsocker</li>
-                    <li>3 msk kakao</li>
-                    <li>3 dl havregryn</li>
-                    <li>3 msk kallt starkt kaffe</li>
+                    <li id="butter">100 g smör</li>
+                    <li id="sugar">1 dl socker</li>
+                    <li id="vanillaSugar">1 msk vaniljsocker</li>
+                    <li id="cocoa">3 msk kakao</li>
+                    <li id="rolledOats">3 dl havregryn</li>
+                    <li id="coffee">3 msk kallt starkt kaffe</li>
                     <li>pärlsocker eller annan garnering</li>
                 </ul> 
             </div>
@@ -51,6 +59,10 @@
             </p>
         </footer>
     </div>
+    
+    
+    <!--Scripts-->
+    <script src="../JavaScript/myJavaScript.js"></script>
 </body>
 
 </html>
