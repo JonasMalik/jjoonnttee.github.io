@@ -21,7 +21,6 @@ li{
 }
 
 .object{
-    background-color: blue;
     position: relative;
     width: 50%;
     margin-top: 2%;
@@ -339,3 +338,4 @@ li{
     }
     
 }
+
