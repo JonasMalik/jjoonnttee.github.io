@@ -10,6 +10,9 @@
     <div id = "mainContainer">   
         <div id="recipe">
             <div id="border">
+                <a href="../index.html">
+                <img id="back" src="../Images/Pil.png">
+                <a/>
                 <img id="recipeImg" src="../Images/chokladbollar.jpg" alt="Chokladbollar">
             </div>
             <hr id="hLine">
@@ -21,7 +24,7 @@
                     Detta är ett recept från Buffé nr 9, 2001.
                 </p>
             </div>
-            <form onclick="changePortions()">
+            <form onclick="changePortions();fadeFunction();">
                 <input id="one" type="radio" name="portions" value="10"> 10 portioner
                 <input id="two" type="radio" name="portions" value="20"> 20 portioner
                 <input id="three" type="radio" name="portions" value="30"> 30 portioner
@@ -63,6 +66,8 @@
     
     <!--Scripts-->
     <script src="../JavaScript/myJavaScript.js"></script>
+    <script src="../JavaScript/jquery-1.12.1.min.js"></script>
+    <script src="../JavaScript/jqScript.js"></script>
 </body>
 
 </html>
