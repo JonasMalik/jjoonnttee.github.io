@@ -152,7 +152,7 @@ li{
     width: 40%;
     min-width: 15rem;
     max-height: 10rem;
-    margin-top: -35%;
+    margin-top: -40%;
     margin-left: 60%;
     margin-bottom: 2%;
 }
@@ -165,11 +165,25 @@ li{
     padding-bottom: 3%;
 }
 
-.star{
-    width: 8%;
-    -webkit-filter: grayscale(100%);   
+#ratingContainer{
+    background-color: aqua;
 }
 
+.star{
+    width: 8%;
+    -webkit-filter: grayscale(100%); 
+    float: left;
+}
+
+#votes{
+    padding-left: 30%;
+    margin-bottom: 0%;
+    padding-top: 2%;
+}
+#rating{
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
 
 
 
