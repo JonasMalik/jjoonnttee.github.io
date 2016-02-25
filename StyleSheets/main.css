@@ -166,7 +166,7 @@ li{
 }
 
 #ratingContainer{
-    background-color: aqua;
+    
 }
 
 .star{
@@ -184,7 +184,16 @@ li{
     margin-top: 1%;
     margin-bottom: 0%;
 }
-
+#loading{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    z-index: 11;
+    
+}
 
 
 /*====================================== MOBIL SKÄRM ===================================*/
@@ -361,6 +370,16 @@ li{
     #hLine{
         display: none;
     }
+    #loading{
+    display: block;
+    position: absolute;
+    width: 15%;
+    padding-left: 42.5%;
+    padding-right: 42.5%;
+    padding-bottom: 2%;
+    z-index: 11;
+    
+}
     
 }
 

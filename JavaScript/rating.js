@@ -65,6 +65,11 @@ $('#star5').click(function() {
 
 
 function votes(i){
+    
+   $(document).ajaxStart(function() {
+        $("#loading").css("display","block");
+    })
+        
     $.ajax({
         method: "GET",
         url:  vote+""+i,
@@ -74,20 +79,28 @@ function votes(i){
                 url: "https://edu.oscarb.se/sjk15/api/recipe/?api_key=d7607304c8de1b93&recipe=chokladbollar",
                 success: function(data) {
                     $('#votes').text(data.votes+" röst/er");
-                    $('#rating').text(data.rating+" i snitt betyg");
+                    $('#rating').text(data.rating.toFixed(2)+" i snitt betyg");
+                    $('#loading').css("display", "none");
                 }, 
             });       
         }, 
     });
 };
 
-
 $(document).ready ( function(){
+    
+    $(document).ajaxStart(function() {
+        $("#loading").css("display","block");
+    })
+    
     $.ajax({
         method: "GET",
         url: "https://edu.oscarb.se/sjk15/api/recipe/?api_key=d7607304c8de1b93&recipe=chokladbollar",
         success: function(data) {
-            $('#votes').text(data.votes+" röst/er");      
+            $('#votes').text(data.votes+" röst/er");  
+            $('#rating').text(data.rating.toFixed(2)+" i snitt betyg");
+            $('#loading').css("display", "none");
+
         },     
     });
 });
