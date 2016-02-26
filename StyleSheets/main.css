@@ -165,9 +165,7 @@ li{
     padding-bottom: 3%;
 }
 
-#ratingContainer{
-    
-}
+
 
 .star{
     width: 8%;
@@ -380,6 +378,22 @@ li{
     z-index: 11;
     
 }
+    
+}
+
+@media (max-width:1050px) and (min-width:500px) {
+ 
+     #recipe #aboutIt{ 
+        align-content: center;
+        float: none;
+        position: relative;
+        width: 100%;
+        min-width: 0px;
+        max-height: 100%;;
+        margin-top: 0%;
+        margin-left: 0%;
+        padding-bottom: 3%;
+    }
     
 }
 
