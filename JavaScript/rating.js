@@ -1,68 +1,68 @@
 var star = ["", "#star1", "#star2", "#star3", "#star4", "#star5"];
 var vote = "https://edu.oscarb.se/sjk15/api/recipe/?api_key=d7607304c8de1b93&recipe=chokladbollar&rating=";
 
-$("#star1").hover(function(){
-        $("#star1").css("-webkit-filter", "grayscale(0%)");
-        }, function(){
-        $("#star1").css("-webkit-filter", "grayscale(100%)");
-    });
-$("#star2").hover(function(){
-        $("#star1").css("-webkit-filter", "grayscale(0%)");
-        $("#star2").css("-webkit-filter", "grayscale(0%)");
-        }, function(){
+        $("#star1").hover(function () {
+            $("#star1").css("-webkit-filter", "grayscale(0%)");
+        }, function () {
+            $("#star1").css("-webkit-filter", "grayscale(100%)");
+        });
+        $("#star2").hover(function () {
+            $("#star1").css("-webkit-filter", "grayscale(0%)");
+            $("#star2").css("-webkit-filter", "grayscale(0%)");
+        }, function () {
         $("#star1").css("-webkit-filter", "grayscale(100%)");
         $("#star2").css("-webkit-filter", "grayscale(100%)");
     });
-$("#star3").hover(function(){
+        $("#star3").hover(function () {
         $("#star1").css("-webkit-filter", "grayscale(0%)");
         $("#star2").css("-webkit-filter", "grayscale(0%)");
         $("#star3").css("-webkit-filter", "grayscale(0%)");
-        }, function(){
+        }, function () {
         $("#star1").css("-webkit-filter", "grayscale(100%)");
         $("#star2").css("-webkit-filter", "grayscale(100%)");
         $("#star3").css("-webkit-filter", "grayscale(100%)");
     });
-$("#star4").hover(function(){
+        $("#star4").hover(function () {
         $("#star1").css("-webkit-filter", "grayscale(0%)");
         $("#star2").css("-webkit-filter", "grayscale(0%)");
         $("#star3").css("-webkit-filter", "grayscale(0%)");
         $("#star4").css("-webkit-filter", "grayscale(0%)");
-        }, function(){
+        }, function () {
         $("#star1").css("-webkit-filter", "grayscale(100%)");
         $("#star2").css("-webkit-filter", "grayscale(100%)");
         $("#star3").css("-webkit-filter", "grayscale(100%)");
         $("#star4").css("-webkit-filter", "grayscale(100%)");
     });
-$("#star5").hover(function(){
+        $("#star5").hover(function () {
         $("#star1").css("-webkit-filter", "grayscale(0%)");
         $("#star2").css("-webkit-filter", "grayscale(0%)");
         $("#star3").css("-webkit-filter", "grayscale(0%)");
         $("#star4").css("-webkit-filter", "grayscale(0%)");
         $("#star5").css("-webkit-filter", "grayscale(0%)");
-        }, function(){
+        }, function () {
         $("#star1").css("-webkit-filter", "grayscale(100%)");
         $("#star2").css("-webkit-filter", "grayscale(100%)");
         $("#star3").css("-webkit-filter", "grayscale(100%)");
         $("#star4").css("-webkit-filter", "grayscale(100%)");
         $("#star5").css("-webkit-filter", "grayscale(100%)");
     });
-
-$('#star1').click(function() {
+    
+        $('#star1').click(function () {
    votes(1);
 });
-$('#star2').click(function() {
+        $('#star2').click(function () {
    votes(2);
 });
-$('#star3').click(function() {
+        $('#star3').click(function () {
    votes(3);
 });
-$('#star4').click(function() {
+        $('#star4').click(function () {
    votes(4);
 });
-$('#star5').click(function() {
-   votes(5);
-});
+        $('#star5').click(function () {
+   votes(5);                    
 
+});
 
 function votes(i){
     
@@ -78,9 +78,15 @@ function votes(i){
                 method: "GET",
                 url: "https://edu.oscarb.se/sjk15/api/recipe/?api_key=d7607304c8de1b93&recipe=chokladbollar",
                 success: function(data) {
+                    while(i>=0){
+                        $(star[i]).css("-webkit-filter", "grayscale(0%)")
+                        i--;
+                    }
                     $('#votes').text(data.votes+" röst/er");
                     $('#rating').text(data.rating.toFixed(2)+" i snitt betyg");
                     $('#loading').css("display", "none");
+                    $(".star").unbind('mouseenter mouseleave');
+                    $(".star").unbind('click').click(function(){})
                 }, 
             });       
         }, 
@@ -88,7 +94,6 @@ function votes(i){
 };
 
 $(document).ready ( function(){
-    
     $(document).ajaxStart(function() {
         $("#loading").css("display","block");
     })
