@@ -165,7 +165,12 @@ li{
     padding-bottom: 3%;
 }
 
-
+#hLine{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    border:0.1rem solid black;
+    }
 
 .star{
     width: 8%;
